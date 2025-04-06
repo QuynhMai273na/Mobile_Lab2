@@ -1,0 +1,181 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Ảnh đại diện -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/qmai"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp" />
+<!--            android:background="@drawable/circle_shape" />-->
+
+        <!-- Họ và Tên -->
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nguyễn Thị Quỳnh Mai"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Nghề nghiệp -->
+        <TextView
+            android:id="@+id/txtJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Software Engineer Intern"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Email -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_dialog_email"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nguyenquynhmai273na@gmail.com"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <!-- Profile -->
+        <TextView
+            android:text="PROFILE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/txtObjective"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="● Aspiring Software Engineer with a strong foundation in Computer Science, developed through rigorous coursework and hands-on projects as a fourth-year Information Systems student at the University of Information Technology. \n● Passionate about software development, I am eager to apply my technical knowledge, enhance my problem-solving skills, and contribute meaningfully to the company's growth while continuously expanding my expertise in cutting-edge technologies.
+"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Education & Leaning Development -->
+        <TextView
+            android:text="EDUCATION &amp; LEARNING DEVELOPMENT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/txtUniversity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="\t\t\tUNIVERSITY \n Sep 2021 - Dec 2025 \n \t\t\t\t(Expected)"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtEducation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="University of Information Technology - UIT
+                            \n Major: Advanced Program in Information System
+                            \n GPA: 9.02/10
+                            "
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+        <!-- KNOWLEDGE & SKILLS -->
+        <TextView
+            android:text="KNOWLEDGE &amp; SKILLS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/txtSkills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="●	Programming: Proficient in C++, C#, HTML, CSS, JavaScript, NodeJS, React, Bootstrap, including web development and Window Forms.
+                        \n●	Database Management &amp; SQL: Extensive experience with SQL server, Oracle, MongoDB, PostgreSQL
+                        \n●	Data visualization &amp; Analytics: Having experience with Power BI and Microsoft Excel.
+                        \n●	Leadership &amp; Communication: Quick learner with the ability to adapt to new technologies, strong leadership abilities with effective communication skills in both English and Vietnamese.
+                        "
+            android:textSize="16sp"/>
+
+        <!-- PROJECT -->
+        <TextView
+            android:text="PROJECTS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/txtProjectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:text="\t\tLove Gift Website \nSep 2024 – Dec 2024"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txtProjectSpecify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="●	Developed Love Gifts, a matchmaking platform with wishlist sharing and a task-based reward website.
+                            \n●	Built a wishlist system, allowing users to create, update, and sync gift lists with partners.
+                            \n●	Developed a scalable backend with Node.js, Express.js, and MongoDB and an interactive React frontend for a seamless user experience.
+                            "
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
